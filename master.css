@@ -15,6 +15,10 @@ body {
   background-color: #4D148C;
 }
 
+#logo {
+  height: 200px;
+}
+
 h1 {
   margin: 0 0 10px;
   padding-top: 10px;
@@ -22,9 +26,9 @@ h1 {
   color: #FF6600;
 }
 
-iframe {
+#cal_container {
   margin: 0 auto;
-  display: block;
+  width: 95%;
 }
 
 h2 {
