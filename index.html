@@ -2,6 +2,23 @@
 <link rel="stylesheet" href="master.css">
 <head>
   <title>Vacation Dates</title>
+  <!--<style type="text/css">
+  	table.tableizer-table {
+  		font-size: 12px;
+  		border: 1px solid #CCC;
+  		font-family: Arial, Helvetica, sans-serif;
+  	}
+  	.tableizer-table td {
+  		padding: 4px;
+  		margin: 3px;
+  		border: 1px solid #CCC;
+  	}
+  	.tableizer-table th {
+  		background-color: #8B0000;
+  		color: #FFF;
+  		font-weight: bold;
+  	}
+  </style>-->
 </head>
 <body>
   <img id="logo" src="logo.png" alt="Cab_Corner_Logo" />
@@ -9,10 +26,42 @@
   <h1>Vacation Calendar</h1>
   <hr id="header_border" />
   <div id="cal_container">
-    <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ff6600&ctz=America%2FLos_Angeles&showTitle=0&showPrint=0&src=Y2Fic2Nvcm5lcjIwMjJAZ21haWwuY29t&color=%230B8043" style="border-width:0" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
+    <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ff6600&ctz=America%2FLos_Angeles&mode=MONTH&showTitle=0&showCalendars=0&showTz=1&showPrint=0&showNav=1&showDate=1&src=Y2Fic2Nvcm5lcjIwMjJAZ21haWwuY29t&src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&color=%23F4511E&color=%230B8043" style="border-width:0" width="100%" height="600" frameborder="0" scrolling="no" id="cal_desktop"></iframe>
   </div>
   <hr id="header_border" />
   <h2>Current Schedule <i id="s_status"></i></h2>
   <hr id="header_border" />
-  <img src="Schedule.png" alt="Current Schedule" id="schedule" />
+  <!--<img src="Schedule.png" alt="Current Schedule" id="schedule" />-->
+  <div>
+    <table>
+      <thead>
+        <tr class="DoW"><th class="invisible"></th><th>Sunday</th><th>Monday</th><th>Tuesday</th><th>Wednesday</th><th>Thursday</th><th>Friday</th><th>Saturday</th></tr>
+      </thead>
+      <tbody>
+       <tr><td>Cody      </td><td id="WDay">Su</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td id="WDay">Sa</td></tr>
+       <tr><td>Jason     </td><td id="WDay">Su</td><td>220</td><td>243</td><td>243</td><td>243</td><td>220</td><td id="WDay">Sa</td></tr>
+       <tr><td>Tommy     </td><td id="WDay">Su</td><td>245</td><td>245</td><td>245</td><td>245</td><td>245</td><td id="WDay">Sa</td></tr>
+       <tr><td>Todd      </td><td id="WDay">Su</td><td>251</td><td>251</td><td>251</td><td>251</td><td>251</td><td id="WDay">Sa</td></tr>
+       <tr><td>Gene      </td><td id="WDay">Su</td><td>212</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td id="WDay">Sa</td></tr>
+       <tr><td>Jonas     </td><td id="WDay">Su</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td id="WDay">Sa</td></tr>
+       <tr><td>Goodman   </td><td id="WDay">Su</td><td id="WDay">M</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+       <tr><td>Casey     </td><td id="WDay">Su</td><td id="WDay">M</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+       <tr><td>Griffen   </td><td id="WDay">Su</td><td id="WDay">M</td><td>247</td><td>247</td><td>247</td><td>247</td><td>247</td></tr>
+       <tr><td>Ian       </td><td id="WDay">Su</td><td id="WDay">M</td><td>244</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+       <tr><td>JJ        </td><td id="WDay">Su</td><td id="WDay">M</td><td>226</td><td>226</td><td>226</td><td>226</td><td>226</td></tr>
+       <tr><td>Kyren     </td><td>&nbsp;</td><td id="WDay">M</td><td id="WDay">T</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+       <tr><td>Will      </td><td>226</td><td>244</td><td id="WDay">T</td><td id="WDay">W</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+       <tr><td>Avtar     </td><td>243</td><td>243</td><td id="WDay">T</td><td id="WDay">W</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+       <tr><td>Adrian    </td><td>237</td><td>237</td><td id="WDay">T</td><td id="WDay">W</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+       <tr><td>Christain </td><td>&nbsp;</td>&nbsp;<td></td><td>&nbsp;</td><td id="WDay">W</td><td id="WDay">Th</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+       <tr><td>Nick      </td><td>253</td><td>253</td><td>253</td><td id="WDay">W</td><td id="WDay">Th</td><td>253</td><td>253</td></tr>
+       <tr><td>Ricky     </td><td>247</td><td>&nbsp;</td><td>&nbsp;</td><td id="WDay">W</td><td id="WDay">Th</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+       <tr><td>Mark      </td><td>145</td><td>&nbsp;</td><td>&nbsp;</td><td id="WDay">W</td><td id="WDay">Th</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+       <tr><td>Austin    </td><td>147</td><td>147</td><td>&nbsp;</td><td>&nbsp;</td><td id="WDay">Th</td><td id="WDay">F</td><td>&nbsp;</td></tr>
+       <tr><td>Steve     </td><td>235</td><td>235</td><td>235</td><td>235</td><td id="WDay">Th</td><td id="WDay">F</td><td>&nbsp;</td></tr>
+       <tr><td>Jeremy    </td><td>214</td><td>214</td><td>214</td><td>214</td><td>214</td><td id="WDay">F</td><td id="WDay">Sa</td></tr>
+       <tr><td>Joshua    </td><td>220</td><td>247</td><td>220</td><td>220</td><td>220</td><td id="WDay">F</td><td id="WDay">Sa</td></tr>
+      </tbody>
+    </table>
+  </div>
 </body>
