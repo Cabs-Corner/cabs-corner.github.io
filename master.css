@@ -72,12 +72,16 @@ h2 {
   margin-top: 5px;
 }
 
-table {
+#table {
+  width: 100%;
   margin: 0 auto;
   padding: 5px;
   width: 98%;
   background-color: black;
-  display: block;
+  display: grid;
+  grid-template-columns: 1.1fr repeat(7, 1fr);
+  grid-gap: 3px;
+  /* grid-template-rows: 50px; */
   /*display: inline-block;
   text-align: center;*/
 }
@@ -95,25 +99,36 @@ table {
   visibility: hidden;
 }
 
-td {
-  padding: 2px;
+#table p {
+  font-size: 18px;
   background-color: white;
+  /* align-self: stretch;
+  justify-self: center; */
 }
 
-tr td:first-child {
-  padding-left: 10px;
-  width: 30px;
-  font-weight: bold;
-  font-size: 20px;
-}
-
-tr td:nth-child(n+2) {
-  width: calc(100%/7);
+#table p:nth-child(n+2) {
   text-align: center;
   background-color: lightblue;
 }
 
-#WDay {
+#table p:nth-child(8n+1) {
+  padding-left: 10px;
+  background-color: white;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: left;
+}
+
+#table p:nth-child(-n+8) {
+  height: 30px;
+  background-color: white;
+  font-weight: bolder;
+  font-size: 20px;
+  line-height: 30px;
+  vertical-align: middle;
+}
+
+#table #WDay {
   background-color: lightgreen;
 }
 
