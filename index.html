@@ -21,41 +21,38 @@
   </style>-->
 </head>
 <body>
+  <hr id="top_padding" />
   <img id="logo" src="logo.png" alt="Cab_Corner_Logo" />
-  <hr id="header_border" />
   <h1>Vacation Calendar</h1>
-  <hr id="header_border" />
   <div id="cal_container">
     <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ff6600&ctz=America%2FLos_Angeles&mode=MONTH&showTitle=0&showCalendars=0&showTz=1&showPrint=0&showNav=1&showDate=1&src=Y2Fic2Nvcm5lcjIwMjJAZ21haWwuY29t&src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&color=%23F4511E&color=%230B8043" style="border-width:0" width="100%" height="600" frameborder="0" scrolling="no" id="cal_desktop"></iframe>
   </div>
-  <hr id="header_border" />
-  <h2>Current Schedule <i id="s_status"></i></h2>
-  <hr id="header_border" />
+  <h1>Current Schedule<i id="s_status"></i></h2>
+  <!--<hr id="header_border" />-->
   <!--<img src="Schedule.png" alt="Current Schedule" id="schedule" />-->
   <div id="table">
     <p class="invisible"></p><p>Sunday</p><p>Monday</p><p>Tuesday</p><p>Wednesday</p><p>Thursday</p><p>Friday</p><p>Saturday</p>
     <p>Cody      </p><p id="WDay">Su</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p id="WDay">Sa</p>
-    <p>Jason     </p><p id="WDay">Su</p><p>220</p><p>243</p><p>243</p><p>243</p><p>220</p><p id="WDay">Sa</p>
-    <p>Tommy     </p><p id="WDay">Su</p><p>245</p><p>245</p><p>245</p><p>245</p><p>245</p><p id="WDay">Sa</p>
-    <p>Todd      </p><p id="WDay">Su</p><p>251</p><p>251</p><p>251</p><p>251</p><p>251</p><p id="WDay">Sa</p>
-    <p>Gene      </p><p id="WDay">Su</p><p>212</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p id="WDay">Sa</p>
+    <p>Jason     </p><p id="WDay">Su</p><p>&nbsp</p><p>&nbsp</p><p>&nbsp</p><p>&nbsp</p><p>&nbsp</p><p id="WDay">Sa</p>
+    <p>Tommy     </p><p id="WDay">Su</p><p>&nbsp</p><p>&nbsp</p><p>&nbsp</p><p>&nbsp</p><p>&nbsp</p><p id="WDay">Sa</p>
+    <p>Todd      </p><p id="WDay">Su</p><p>&nbsp</p><p>&nbsp</p><p>&nbsp</p><p>&nbsp</p><p>&nbsp</p><p id="WDay">Sa</p>
+    <p>Gene      </p><p id="WDay">Su</p><p>&nbsp</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p id="WDay">Sa</p>
     <p>Jonas     </p><p id="WDay">Su</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p id="WDay">Sa</p>
     <p>Goodman   </p><p id="WDay">Su</p><p id="WDay">M</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
     <p>Casey     </p><p id="WDay">Su</p><p id="WDay">M</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
-    <p>Griffen   </p><p id="WDay">Su</p><p id="WDay">M</p><p>247</p><p>247</p><p>247</p><p>247</p><p>247</p>
-    <p>Ian       </p><p id="WDay">Su</p><p id="WDay">M</p><p>244</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
-    <p>JJ        </p><p id="WDay">Su</p><p id="WDay">M</p><p>226</p><p>226</p><p>226</p><p>226</p><p>226</p>
+    <p>Griffen   </p><p id="WDay">Su</p><p id="WDay">M</p><p>&nbsp</p><p>&nbsp</p><p>&nbsp</p><p>&nbsp</p><p>&nbsp</p>
+    <p>Ian       </p><p id="WDay">Su</p><p id="WDay">M</p><p>&nbsp</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
+    <p>JJ        </p><p id="WDay">Su</p><p id="WDay">M</p><p>&nbsp</p><p>&nbsp</p><p>&nbsp</p><p>&nbsp</p><p>&nbsp</p>
     <p>Kyren     </p><p>&nbsp;</p><p id="WDay">M</p><p id="WDay">T</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
-    <p>Will      </p><p>226</p><p>244</p><p id="WDay">T</p><p id="WDay">W</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
-    <p>Avtar     </p><p>243</p><p>243</p><p id="WDay">T</p><p id="WDay">W</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
-    <p>Adrian    </p><p>237</p><p>237</p><p id="WDay">T</p><p id="WDay">W</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
+    <p>Avtar     </p><p>&nbsp</p><p>&nbsp</p><p id="WDay">T</p><p id="WDay">W</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
+    <p>Adrian    </p><p>&nbsp</p><p>&nbsp</p><p id="WDay">T</p><p id="WDay">W</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
     <p>Christain </p><p>&nbsp;</p><p></p><p>&nbsp;</p><p id="WDay">W</p><p id="WDay">Th</p><p>&nbsp;</p><p>&nbsp;</p>
-    <p>Nick      </p><p>253</p><p>253</p><p>253</p><p id="WDay">W</p><p id="WDay">Th</p><p>253</p><p>253</p>
-    <p>Ricky     </p><p>247</p><p>&nbsp;</p><p>&nbsp;</p><p id="WDay">W</p><p id="WDay">Th</p><p>&nbsp;</p><p>&nbsp;</p>
-    <p>Mark      </p><p>145</p><p>&nbsp;</p><p>&nbsp;</p><p id="WDay">W</p><p id="WDay">Th</p><p>&nbsp;</p><p>&nbsp;</p>
-    <p>Austin    </p><p>147</p><p>147</p><p>&nbsp;</p><p>&nbsp;</p><p id="WDay">Th</p><p id="WDay">F</p><p>&nbsp;</p>
-    <p>Steve     </p><p>235</p><p>235</p><p>235</p><p>235</p><p id="WDay">Th</p><p id="WDay">F</p><p>&nbsp;</p>
-    <p>Jeremy    </p><p>214</p><p>214</p><p>214</p><p>214</p><p>214</p><p id="WDay">F</p><p id="WDay">Sa</p>
-    <p>Joshua    </p><p>220</p><p>247</p><p>220</p><p>220</p><p>220</p><p id="WDay">F</p><p id="WDay">Sa</p>
+    <p>Nick      </p><p>&nbsp</p><p>&nbsp</p><p>&nbsp</p><p id="WDay">W</p><p id="WDay">Th</p><p>&nbsp</p><p>&nbsp</p>
+    <p>Mark      </p><p>&nbsp</p><p>&nbsp;</p><p>&nbsp;</p><p id="WDay">W</p><p id="WDay">Th</p><p>&nbsp;</p><p>&nbsp;</p>
+    <p>Austin    </p><p>&nbsp</p><p>&nbsp</p><p>&nbsp;</p><p>&nbsp;</p><p id="WDay">Th</p><p id="WDay">F</p><p>&nbsp;</p>
+    <p>Steve     </p><p>&nbsp</p><p>&nbsp</p><p>&nbsp</p><p>&nbsp</p><p id="WDay">Th</p><p id="WDay">F</p><p>&nbsp;</p>
+    <p>Jeremy    </p><p>&nbsp</p><p>&nbsp</p><p>&nbsp</p><p>&nbsp</p><p>&nbsp</p><p id="WDay">F</p><p id="WDay">Sa</p>
+    <p>Joshua    </p><p>&nbsp</p><p>&nbsp</p><p>&nbsp</p><p>&nbsp</p><p>&nbsp</p><p id="WDay">F</p><p id="WDay">Sa</p>
+    <p>Ricky     </p><p>&nbsp</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p id="WDay">F</p><p id="WDay">Sa</p>
   </div>
 </body>
